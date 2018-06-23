@@ -12,6 +12,6 @@ if (!function_exists('p')) {
 		}
 		$str .= $show_data;
 		$str .= '</pre>';
-		return $str;
+		echo $str;
 	}
 }
