@@ -1,2 +1,2 @@
 # dump-p
-测试打包composer库
+测试创建自己的第一个Composer/Packagist包
