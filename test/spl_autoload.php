@@ -1,6 +1,6 @@
 <?php
 
-spl_autoload_register('myAutoLoad', true, true);
+spl_autoload_register('myAutoLoad');
 
 function myAutoLoad($className)
 {
@@ -8,4 +8,5 @@ function myAutoLoad($className)
     include "./{$className}.php";
 }
 
-$objDemo = new AutoloadClass();
+new AutoloadClass();
+//new AutoloadClass2();
