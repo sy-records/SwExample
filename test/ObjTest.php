@@ -1,6 +1,6 @@
 <?php
 
-class objTest
+class ObjTest
 {
     protected $num;
     
@@ -29,14 +29,14 @@ function microtimeFloat()
 $startTime = microtimeFloat();
 
 for ($i = 0; $i < 10000; $i++) {
-    $test = new objTest($i);
+    $test = new ObjTest($i);
     $test->getNum();
 }
 echo "对象不复用耗时" . (microtimeFloat() - $startTime) . '秒' . PHP_EOL;
 
 $startTime = microtimeFloat();
 
-$test = new objTest(0);
+$test = new ObjTest(0);
 
 for ($i = 0; $i < 10000; $i++) {
     $test->setNum($i);
