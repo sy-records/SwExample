@@ -2,7 +2,7 @@
 
 include '../vendor/autoload.php';
 
-use Swoole\DbHelper;
+use SwExample\DbHelper;
 
 $sql = 'select * from wp_users limit 1';
 

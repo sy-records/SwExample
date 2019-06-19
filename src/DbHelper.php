@@ -6,7 +6,7 @@
  * Boke: https://qq52o.me
  */
 
-namespace Swoole;
+namespace SwExample;
 
 use PDO;
 use PDOPDOException;

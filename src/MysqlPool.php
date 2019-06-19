@@ -1,6 +1,6 @@
 <?php
 
-namespace Swoole;
+namespace SwExample;
 
 use \Swoole\Coroutine\MySQL;
 use \Swoole\Coroutine\Channel as chan;

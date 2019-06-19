@@ -1,9 +1,9 @@
 {
-  "name": "sy-records/dump-p",
-  "description": "echo dump",
+  "name": "sy-records/swoole-example",
+  "description": "swoole example file.",
   "type": "library",
-  "keywords": ["echo","dump","p"],
-  "homepage": "https://github.com/sy-records/dump-p",
+  "keywords": ["swoole","example","test"],
+  "homepage": "https://github.com/sy-records/SwExample",
   "license": "MIT",
   "authors": [
     {
@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "php": ">=5.3.0"
+    "php": ">5.4.0"
   },
   "minimum-stability": "stable",
   "autoload": {

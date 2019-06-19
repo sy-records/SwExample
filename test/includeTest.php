@@ -2,6 +2,6 @@
 
 include './../src/Test.php';
 
-use Swoole\Test;
+use SwExample\Test;
 
 new Test();

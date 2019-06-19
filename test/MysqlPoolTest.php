@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-use Swoole\MysqlPool;
+use SwExample\MysqlPool;
 
 $config = [
     'host' => '127.0.0.1',   //数据库ip
