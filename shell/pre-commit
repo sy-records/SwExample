@@ -1,0 +1,32 @@
+#!/bin/bash
+PHPCS_BIN=/usr/local/bin/phpcs
+PHPCS_CODING_STANDARD=PSR2
+
+# 获取暂存区中 添加 (A), 赋值 (C), 删除 (D), 修改 (M), 重命名 (R)的php文件
+FILES=$(git diff --cached --name-only --diff-filter=ACMR -- '*.php')
+
+# 没有 跳过 以0结束
+if [ "$FILES" == "" ]; then
+ exit 0
+fi
+
+for FILE in $FILES
+do
+ echo "${FILE} 开始检查"
+
+ # 执行命令 phpcs --standard=PSR2 FILE
+ PHPCS_OUTPUT=$($PHPCS_BIN --standard=$PHPCS_CODING_STANDARD $FILE)
+
+ PHPCS_RETVAL=$?
+
+ if [ $PHPCS_RETVAL -ne 0 ];
+ then
+    echo "${FILE} 检查未通过，信息如下："
+    echo  "${PHPCS_OUTPUT}"
+    exit 1
+ else
+   echo "${FILE} 检查通过;"
+ fi
+done
+echo "检查完成"
+exit 0
