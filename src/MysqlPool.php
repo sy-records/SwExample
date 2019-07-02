@@ -43,7 +43,7 @@ class MysqlPool
 				$mysql = new MySQL();
 				$res = $mysql->connect($config);
 				if ($res == false) {
-					//连接失败，抛弃常
+					//连接失败，抛异常
 					throw new \RuntimeException("failed to connect mysql server.");
 				} else {
 					//mysql连接存入channel
