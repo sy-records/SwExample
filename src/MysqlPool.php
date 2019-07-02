@@ -2,8 +2,8 @@
 
 namespace SwExample;
 
-use \Swoole\Coroutine\MySQL;
-use \Swoole\Coroutine\Channel as chan;
+use Swoole\Coroutine\MySQL;
+use Swoole\Coroutine\Channel as chan;
 
 class MysqlPool
 {
