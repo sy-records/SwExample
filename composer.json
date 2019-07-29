@@ -20,6 +20,9 @@
   "autoload": {
     "psr-4": {
       "SwExample\\": "src/"
-    }
+    },
+    "files": [
+      "src/dump-p.php"
+    ]
   }
 }
