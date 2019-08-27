@@ -86,3 +86,11 @@ composer init
 ### 3. 发布Composer包
 
 将我们写好的代码包提交到[Packagist](https://packagist.org/packages/submit)
+
+提交成功后，等待镜像更新或者直接从源站拉取
+
+```bash
+composer require sy-records/swoole-example
+```
+
+如果没有发布releases的话则需要加上`:dev-master`
