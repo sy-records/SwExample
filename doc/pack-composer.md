@@ -63,3 +63,21 @@
 ```bash
 composer init
 ```
+
+![使用composer init命令](../images/composer-init.png)
+
+```json
+{
+    "name": "lufei/sw-example",
+    "description": "swoole example file.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sy-records",
+            "email": "52o@qq52o.cn"
+        }
+    ],
+    "require": {}
+}
+```
