@@ -66,6 +66,8 @@ composer init
 
 ![使用composer init命令](../images/composer-init.png)
 
+使用命令生成的composer.json文件：
+
 ```json
 {
     "name": "lufei/sw-example",
@@ -81,3 +83,6 @@ composer init
     "require": {}
 }
 ```
+### 3. 发布Composer包
+
+将我们写好的代码包提交到[Packagist](https://packagist.org)
