@@ -85,4 +85,4 @@ composer init
 ```
 ### 3. 发布Composer包
 
-将我们写好的代码包提交到[Packagist](https://packagist.org)
+将我们写好的代码包提交到[Packagist](https://packagist.org/packages/submit)
