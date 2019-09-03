@@ -66,6 +66,8 @@ composer init
 
 ![使用composer init命令](../images/composer-init.png)
 
+使用命令生成的composer.json文件：
+
 ```json
 {
     "name": "lufei/sw-example",
@@ -81,3 +83,14 @@ composer init
     "require": {}
 }
 ```
+### 3. 发布Composer包
+
+将我们写好的代码包提交到[Packagist](https://packagist.org/packages/submit)
+
+提交成功后，等待镜像更新或者直接从源站拉取
+
+```bash
+composer require sy-records/swoole-example
+```
+
+如果没有发布releases的话则需要加上`:dev-master`
