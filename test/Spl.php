@@ -5,7 +5,7 @@
  * Email: lufei@swoole.com
  */
 
-// spl_class 返回所有可用的SPL类
+// spl_classes 返回所有可用的SPL类
 print_r(spl_classes());
 
 // spl_​autoload_​register  注册给定的函数作为 __autoload 的实现
