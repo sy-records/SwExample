@@ -7,5 +7,6 @@ use SwExample\AutoloadClass;
 
 $objDemo = new AutoloadClass();
 if ($objDemo) {
-    echo 1;
+    echo 1
 }
+
