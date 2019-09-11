@@ -1,11 +1,11 @@
 <?php
 
 include '../vendor/autoload.php';
+//include '../src/AutoloadClass.php';
 
-use Swoole\Test;
+use SwExample\AutoloadClass;
 
-//Test::p('111');
-
-$objDemo = new Test();
-
-$objDemo->p('1111');
+$objDemo = new AutoloadClass();
+if ($objDemo) {
+    echo 1;
+}
